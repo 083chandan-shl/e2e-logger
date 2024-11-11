@@ -1,0 +1,24 @@
+{
+  "name": "e2e-logger",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Serves a private logger interface for the packages of the project.",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "npm i",
+    "build": "tsc -p ./tsconfig.build.json",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.3"
+  },
+  "author": "Kevin Kirchhof <Kevin.Kirchhof.extern@shltm.de>",
+  "license": "UNLICENSED"
+}
